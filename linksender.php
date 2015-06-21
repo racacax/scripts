@@ -21,7 +21,7 @@ file_put_contents($file, $person, FILE_APPEND | LOCK_EX);
 ?>
 <?php
 
-$mail = 'racacax@gmail.com'; // Déclaration de l'adresse de destination.
+$mail = 'votre email'; // Déclaration de l'adresse de destination.
 
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
 
@@ -41,10 +41,10 @@ else
 
 //=====Déclaration des messages au format texte et au format HTML.
 
-$message_txt = 'Bonjour racacax,<p></p>
+$message_txt = 'Bonjour ,<p></p>
 Un nouveau lien vient d\'être posté, voici la description : <meta charset="utf-8"><p></p>Nom de la chaine : '.$question1."<p></p>Lien du flux : ".$question2."<p></p>Qualité du flux : ".$question3."<p></p>Date : ".$u.' à '.$heure;
 
-$message_html = 'Bonjour racacax,<p></p>
+$message_html = 'Bonjour ,<p></p>
 Un nouveau lien vient d\'être posté, voici la description : <meta charset="utf-8"><p></p>Nom de la chaine : '.$question1."<p></p>Lien du flux : ".$question2."<p></p>Qualité du flux : ".$question3."<p></p>Date : ".$u.' à '.$heure;
 
 //==========
@@ -69,9 +69,9 @@ $sujet = "Un nouveau lien vient d'être posté !";
 
 //=====Création du header de l'e-mail.
 
-$header = "From: \"Racacax TV [Liens]\"<".$question4.">".$passage_ligne;
+$header = "From: \"Sujet\"<".$question4.">".$passage_ligne;
 
-$header.= "Reply-to: \"Racacax TV [Liens]\" <".$question4.">".$passage_ligne;
+$header.= "Reply-to: \"Sujet\" <".$question4.">".$passage_ligne;
 
 $header.= "MIME-Version: 1.0".$passage_ligne;
 
